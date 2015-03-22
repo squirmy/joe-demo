@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Joe</title>
+  <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+  <div id="page">
+    <div>
+      <h1>Wyshbone Designs</h1>
+    </div>
+
+    <div class="slider">
+      <button class="slider-move slider-move-left" v-on="click: scrollLeft">◀</button>
+
+      <div class="slider-main">
+        <div v-repeat="images" class="slider-image" v-show="show">
+          <img src="{{url}}" class="grayscale" />
+        </div>
+      </div>
+
+      <button class="slider-move slider-move-right" v-on="click: scrollRight">▶</button>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://raw.githubusercontent.com/yyx990803/vue/0.11.5/dist/vue.js"></script>
+  <script type="text/javascript" src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
